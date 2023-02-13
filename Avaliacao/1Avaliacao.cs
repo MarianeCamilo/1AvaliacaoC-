@@ -1,4 +1,6 @@
 using System;
+using System.Text;
+
 
 namespace _1Avaliacao
 {
@@ -6,19 +8,23 @@ namespace _1Avaliacao
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
-            string[] lines = File.ReadAllLines("C:/Users/eduardo.furlaneto/OneDrive - SENAC-SC/DOTNET/Prova1/Prova1/naoordenado.txt", Encoding.UTF8);
-            string leitura = File.ReadAllText("C:/Users/eduardo.furlaneto/OneDrive - SENAC-SC/DOTNET/Prova1/Prova1/naoordenado.txt", Encoding.UTF8);
-            while (true){value = leitura.readLine();
-            if(value != null){// Enquanto a linha nao for vazia, continua o programa
+            string[] lines = File.ReadAllLines("C:/Users/mariane.costa/Documents/C#/1AvaliavaoC#/entrada.txt", Encoding.UTF8);
+            string value = "";
+            string leitura = "";
+
+            while (true)
+            {value = leitura.readLine();
+
+            if(value != null)
+            {// Enquanto a linha nao for vazia, continua o programa
             linhas++; // Contando o tamanho
             }else
+
             break;
             }
+            
             leitura.close(); 
 
-            Console.WriteLine("Leitura");
-            Console.WriteLine(leitura);
             Console.WriteLine("lines");
             Console.WriteLine(lines);
             foreach (string item in lines)
@@ -26,7 +32,7 @@ namespace _1Avaliacao
                 Console.WriteLine(item);
             }
 
-                Array.ForEach(lines, item => {Console.WriteLine(item);});
+               // Array.ForEach(lines, item => {Console.WriteLine(item);});
 
         }
     }
