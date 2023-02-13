@@ -8,22 +8,7 @@ namespace _1Avaliacao
     {
         static void Main(string[] args)
         {
-            string[] lines = File.ReadAllLines("C:/Users/mariane.costa/Documents/C#/1AvaliavaoC#/entrada.txt", Encoding.UTF8);
-            string value = "";
-            string leitura = "";
-
-            while (true)
-            {value = leitura.readLine();
-
-            if(value != null)
-            {// Enquanto a linha nao for vazia, continua o programa
-            linhas++; // Contando o tamanho
-            }else
-
-            break;
-            }
-            
-            leitura.close(); 
+            string[] lines = File.ReadAllLines("C:/Users/mariane.costa/Documents/C#/1AvaliavaoC#/entrada", Encoding.UTF8);
 
             Console.WriteLine("lines");
             Console.WriteLine(lines);
@@ -33,7 +18,28 @@ namespace _1Avaliacao
             }
 
                // Array.ForEach(lines, item => {Console.WriteLine(item);});
-
         }
+
+        
     }
+
+
+
+
+
+
+    class WriteAllLines
+{
+    public static async Task ExampleAsync()
+    {
+        string[] lines =
+        {
+            "1", "5", "8" 
+        };
+
+        await File.WriteAllLinesAsync("entrada.txt", lines);
+    }
+}
+
+
 }
