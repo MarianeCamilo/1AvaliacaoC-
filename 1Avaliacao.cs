@@ -8,7 +8,7 @@ namespace _1Avaliacao
     {
         static void Main(string[] args)
         {
-            string[] lines = File.ReadAllLines("C:/Users/mariane.costa/Documents/C#/1AvaliavaoC#/entrada", Encoding.UTF8);
+            string[] lines = File.ReadAllLines("C:/Users/mariane.costa/Documents/C#/1AvaliavaoC#/entrada.txt", Encoding.UTF8);
 
             Console.WriteLine("lines");
             Console.WriteLine(lines);
